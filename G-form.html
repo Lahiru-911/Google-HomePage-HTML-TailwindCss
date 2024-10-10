@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>G-form</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="flex flex-col h-screen">
+
+        <!-- NavBar -->
+        <ul class="flex items-center justify-end gap-5 pt-3 pr-5 textext-sm">
+            <li>
+                <a href="#" class="hover:underline">Gmail</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Images</a>
+            </li>
+            <li class="p-3 rounded-full hover:bg-gray-300">
+                <a href="#"><svg fill="#000000" class="w-5 h-5"
+                        viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 0h4v4H0V0zm0 6h4v4H0V6zm0 6h4v4H0v-4zM6 0h4v4H6V0zm0 6h4v4H6V6zm0 6h4v4H6v-4zm6-12h4v4h-4V0zm0 6h4v4h-4V6zm0 6h4v4h-4v-4z"
+                            fill-rule="evenodd" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a
+                    class="bg-[#1a73e8] px-8 py-3 text-white rounded-md hover:bg-[#1b66c9] hover:shadow">Sign
+                    in</a>
+            </li>
+        </ul>
+
+        <!-- Main Section -->
+        <div class="flex flex-col items-center gap-6 pt-28 grow">
+            <img class="w-[300px] h-[100px] m-0" src="../G-Form/img/ggg.png">
+            <!-- search bar -->
+            <div
+                class="flex w-full max-w-screen-sm gap-4 px-4 py-2 border rounded-full hover:shadow-lg">
+                <svg class="w-8 h-10 p-1" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                        stroke-linejoin="round" />
+
+                    <g id="SVGRepo_iconCarrier"> <path d="M17 17L21 21"
+                            stroke="#787878" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                            stroke="#787878" stroke-width="2" /> </g>
+                </svg>
+                <input class="focus:outline-none grow" type="text">
+
+                <svg class="p-1" fill="#696969" width="32px" height="40px"
+                    viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#696969">
+
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                        stroke-linejoin="round" />
+
+                    <g id="SVGRepo_iconCarrier"> <path
+                            d="M425.818 709.983V943.41c0 293.551 238.946 532.497 532.497 532.497 293.55 0 532.496-238.946 532.496-532.497V709.983h96.818V943.41c0 330.707-256.438 602.668-580.9 627.471l-.006 252.301h242.044V1920H667.862v-96.818h242.043l-.004-252.3C585.438 1546.077 329 1274.116 329 943.41V709.983h96.818ZM958.315 0c240.204 0 435.679 195.475 435.679 435.68v484.087c0 240.205-195.475 435.68-435.68 435.68-240.204 0-435.679-195.475-435.679-435.68V435.68C522.635 195.475 718.11 0 958.315 0Z"
+                            fill-rule="evenodd" /> </g>
+
+                </svg>
+                <svg class="p-1" width="32px" height="40px" viewBox="0 -2 32 32"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                    fill="#787878" stroke="#787878">
+
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                        stroke-linejoin="round" />
+
+                    <g id="SVGRepo_iconCarrier"> <title>camera</title>
+                        <desc>Created with Sketch Beta.</desc> <defs> </defs> <g
+                            id="Page-1" stroke="none" stroke-width="1"
+                            fill="none" fill-rule="evenodd"
+                            sketch:type="MSPage"> <g id="Icon-Set-Filled"
+                                sketch:type="MSLayerGroup"
+                                transform="translate(-258.000000, -467.000000)"
+                                fill="#808080"> <path
+                                    d="M286,471 L283,471 L282,469 C281.411,467.837 281.104,467 280,467 L268,467 C266.896,467 266.53,467.954 266,469 L265,471 L262,471 C259.791,471 258,472.791 258,475 L258,491 C258,493.209 259.791,495 262,495 L286,495 C288.209,495 290,493.209 290,491 L290,475 C290,472.791 288.209,471 286,471 Z M274,491 C269.582,491 266,487.418 266,483 C266,478.582 269.582,475 274,475 C278.418,475 282,478.582 282,483 C282,487.418 278.418,491 274,491 Z M274,477 C270.687,477 268,479.687 268,483 C268,486.313 270.687,489 274,489 C277.313,489 280,486.313 280,483 C280,479.687 277.313,477 274,477 L274,477 Z"
+                                    id="camera" sketch:type="MSShapeGroup">
+                                </path> </g> </g> </g>
+
+                </svg>
+
+            </div>
+
+            <div class="flex gap-4">
+                <a href="#"
+                    class="px-4 py-2 bg-gray-100 border border-gray-100 rounded-lg hover:border-gray-300">Google
+                    Search</a>
+                <a href="#"
+                    class="px-4 py-2 bg-gray-100 border border-gray-100 rounded-lg hover:border-gray-300">I'm
+                    Feeling Lucky</a>
+            </div>
+
+            <div>
+                Google offered in: <a href="#"
+                    class="mx-3 text-blue-600 hover:underline">සිංහල</a> <a
+                    href="#" class="text-blue-700 hover:underline"
+                    mx-3>தமிழ்</a>
+            </div>
+        </div>
+
+        <!-- Create Footer -->
+        <footer class="bg-gray-200 ">
+
+            <div class="py-3 pl-4">Sri Lanka</div>
+
+            <div class="flex justify-between py-3 border border-graydelay-300">
+                <ul class="flex gap-4 pl-5">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Ads</a></li>
+                    <li><a href="#">business</a></li>
+                    <li><a href="#">How Search Work</a></li>
+                </ul>
+
+                <ul class="flex gap-4 pr-5">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Setting</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </body>
+</html>
